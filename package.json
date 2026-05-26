@@ -24,8 +24,6 @@
 		"--------------- ": "",
 		"test:target": "mocha --recursive \"./test/tests\"",
 		"test:ci": "cd test && yarn install && cd .. && cross-env TEST_TARGET=dist yarn run test:target",
-		"posttest": "yarn run benchmark",
-		"prepare": "npm run build",
 		"release": "standard-version && git push --follow-tags origin main"
 	},
 	"keywords": [
@@ -87,7 +85,7 @@
 		"standard-version": "^9.5.0",
 		"travis-cov": "latest",
 		"ts-node": "^10.9.1",
-		"typescript": "latest",
+		"typescript": "^5.9.0",
 		"yarn": "^1.22.22"
 	},
 	"config": {
